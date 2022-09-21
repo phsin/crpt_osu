@@ -38,7 +38,7 @@
 		<Metadata name="Catalog.кб99_Параметры.Form.ФормаСписка" id="40910271-4d2f-47c1-853e-c5956453d2a4" configVersion="fd1ea068d581f67156eee06464abf8466718aa80"/>
 		<Metadata name="Catalog.кб99_Параметры.Form.ФормаСписка.Form" id="40910271-4d2f-47c1-853e-c5956453d2a4.0" configVersion="0d98830c71b82b2c331832ded7c68837baa9b047"/>
 		<Metadata name="Catalog.кб99_Параметры.Form.ФормаЭлемента" id="feee10ab-e5fa-4558-b9c0-8062378ac3a0" configVersion="cff5baeba9f8df6fc1f370ec863465e883253b99"/>
-		<Metadata name="Catalog.кб99_Параметры.Form.ФормаЭлемента.Form" id="feee10ab-e5fa-4558-b9c0-8062378ac3a0.0" configVersion="f4ec593b3a555f7c2bc8e5aafd38133596a92c51"/>
+		<Metadata name="Catalog.кб99_Параметры.Form.ФормаЭлемента.Form" id="feee10ab-e5fa-4558-b9c0-8062378ac3a0.0" configVersion="5fd95834ce0c85980221f1af6f3883fd0440d551"/>
 		<Metadata name="Catalog.кб99_Параметры.ObjectModule" id="67b96965-8e01-4b50-82e2-342a3d75ecad.0" configVersion="fc35c4efa1bad237cb5101874dc6e9be9e369122"/>
 		<Metadata name="CommandGroup.ЧестныйЗнак" id="d51e8c9f-3c88-40ac-860a-7d8c83c00771" configVersion="ae4a8794868e865b6b78aad2926a221572f45291"/>
 		<Metadata name="CommonCommand.ОтправитьTAPI" id="c6812213-0ea6-48b3-a6c7-5ded2d329742" configVersion="f3df6622c427f9d18a8d68a194c38da377e20a40"/>
@@ -110,7 +110,7 @@
 		<Metadata name="CommonPicture.а3.Picture" id="071b9acd-0b1d-4fe9-a05a-db8456ec72d5.0" configVersion="96ff3de0631299e2f0f7d1c97a6ae5f7fd604ae8"/>
 		<Metadata name="CommonPicture.а4" id="24a3f1df-2be4-434b-a135-baaf90c79e96" configVersion="e11cac71780b3ff1263d71bd13fa92211e35601b"/>
 		<Metadata name="CommonPicture.а4.Picture" id="24a3f1df-2be4-434b-a135-baaf90c79e96.0" configVersion="dbb146a4c586bee3f724a80efa9e699f6e3c48c1"/>
-		<Metadata name="Configuration.кб99_ВыбытиеОСУ" id="9dd04026-9ae5-4f0b-81ce-6d4721e9a9f9" configVersion="3dc203b98d309130cc9dd50a8247e59cf9fc843d"/>
+		<Metadata name="Configuration.кб99_ВыбытиеОСУ" id="9dd04026-9ae5-4f0b-81ce-6d4721e9a9f9" configVersion="2754887c2f30895a44e6bf9fa9c221b497802df7"/>
 		<Metadata name="Configuration.кб99_ВыбытиеОСУ.ManagedApplicationModule" id="d5ae53c9-a92e-444d-9e13-6b8f2d788b71.6" configVersion="fb1c9a251cad35731021ee12117f5bd42543635e"/>
 		<Metadata name="DefinedType.ДенежнаяСуммаНеотрицательная" id="24ec958c-ed34-478d-b1f2-739eb38ea17a" configVersion="015070978f7459c9274b646146a262414c80fed3"/>
 		<Metadata name="Document.РеализацияТоваровУслуг" id="d993870f-1820-4da7-82f1-edfb693c3686" configVersion="b99dc1fcfc377191eb3f90e38f8e9ed6c78477a0">
