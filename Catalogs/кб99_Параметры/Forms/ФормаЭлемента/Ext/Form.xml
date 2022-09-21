@@ -198,6 +198,11 @@
 							<Behavior>Usual</Behavior>
 							<ExtendedTooltip name="ГруппаОборудованиеРасширеннаяПодсказка" id="144"/>
 						</UsualGroup>
+						<Button name="НастроитьРегламентноеЗадание" id="147">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.НастроитьРегламентноеЗадание</CommandName>
+							<ExtendedTooltip name="НастроитьРегламентноеЗаданиеРасширеннаяПодсказка" id="148"/>
+						</Button>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаСтраницаЧестныйЗнак" id="69">
@@ -703,6 +708,21 @@
 			</Picture>
 			<Action>ОткрытьЛичныйКабинет</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НастроитьРегламентноеЗадание" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регламентные задания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить регламентное задание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьРегламентноеЗадание</Action>
 		</Command>
 	</Commands>
 </Form>
