@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<ChildrenAlign>None</ChildrenAlign>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ScalingMode>Normal</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаВерх1" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа верх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа верх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВерх1РасширеннаяПодсказка" id="34"/>
+			<ChildItems>
+				<Button name="Параметры" id="35">
+					<Type>Hyperlink</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.Параметры</CommandName>
+					<PictureLocation>Left</PictureLocation>
+					<ExtendedTooltip name="ПараметрыРасширеннаяПодсказка" id="36"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="МодельФункционированияСистемы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модель функционирования системы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модель функционирования системы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="МодельФункционированияСистемыРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Button name="ОписаниеТоваров" id="15">
+					<Type>Hyperlink</Type>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.ОписаниеТоваров</CommandName>
+					<ExtendedTooltip name="ОписаниеТоваровРасширеннаяПодсказка" id="16"/>
+				</Button>
+				<Button name="ЗаказКМ" id="17">
+					<Type>Hyperlink</Type>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.ЗаказКМ</CommandName>
+					<ExtendedTooltip name="ЗаказКМРасширеннаяПодсказка" id="18"/>
+				</Button>
+				<Button name="НанесениеКМ" id="3">
+					<Type>Hyperlink</Type>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.НанесениеКМ</CommandName>
+					<ExtendedTooltip name="НанесениеКМРасширеннаяПодсказка" id="4"/>
+				</Button>
+				<Button name="ВводВОборот" id="5">
+					<Type>Hyperlink</Type>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.ВводВОборот</CommandName>
+					<ExtendedTooltip name="ВводВОборотРасширеннаяПодсказка" id="6"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВерх" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа верх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа верх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаВерхРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<Button name="Агрегирование" id="11">
+					<Type>Hyperlink</Type>
+					<Representation>Picture</Representation>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.Агрегирование</CommandName>
+					<ExtendedTooltip name="АгрегированиеРасширеннаяПодсказка" id="12"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="МодельФункционированияСистемы2" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модель функционирования системы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модель функционирования системы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="МодельФункционированияСистемы2РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<Button name="Отгрузка" id="29">
+					<Type>Hyperlink</Type>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.Отгрузка</CommandName>
+					<ExtendedTooltip name="ОтгрузкаРасширеннаяПодсказка" id="30"/>
+				</Button>
+				<Button name="ВыводИзОборота" id="31">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ВыводИзОборота</CommandName>
+					<ExtendedTooltip name="ВыводИзОборотаРасширеннаяПодсказка" id="32"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАктивныеФоновыеЗадания" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа активные фоновые задания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа активные фоновые задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАктивныеФоновыеЗаданияРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьКоличествоАктивныхЗаданий" id="45">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество активных операций:</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="НадписьКоличествоАктивныхЗаданийКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="НадписьКоличествоАктивныхЗаданийРасширеннаяПодсказка" id="47"/>
+					<Events>
+						<Event name="Click">НадписьКоличествоАктивныхЗаданийНажатие</Event>
+					</Events>
+				</LabelDecoration>
+				<LabelField name="КоличествоФоновыхЗаданий" id="40">
+					<DataPath>КоличествоФоновыхЗаданий</DataPath>
+					<TitleTextColor>style:FieldSelectionBackColor</TitleTextColor>
+					<TitleFont ref="style:NormalTextFont" kind="StyleItem"/>
+					<TitleLocation>None</TitleLocation>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:FieldSelectionBackColor</TextColor>
+					<ContextMenu name="КоличествоФоновыхЗаданийКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="КоличествоФоновыхЗаданийРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="КоличествоФоновыхЗаданий" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество активных заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокФоновыхЗаданий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список фоновых заданий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>НадписьКоличествоАктивныхЗаданий</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">КоличествоФоновыхЗаданий</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#2BDC2B</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Нет активных операций</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="НанесениеКМ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нанесение КМ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нанесение кодов маркировки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Нанесение</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Нанесение</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ВводВОборот" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввод в оборот</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввод в оборот</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВводВОборот2</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВводВОборот</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="Отгрузка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отгрузка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Отгрузка2</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Отгрузка</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="Агрегирование" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агрегирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Агрегирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.а4</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Агрегирование</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ВыводИзОборота" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывод из оборота</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывод из оборота</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Вывод</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыводИзОборота</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОписаниеТоваров" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание товаров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Товары2</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОписаниеТоваров</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗаказКМ" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ кодов маркировки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ кодов маркировки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗаказКМ</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаказКМ</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="Параметры" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Параметры1</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Параметры</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

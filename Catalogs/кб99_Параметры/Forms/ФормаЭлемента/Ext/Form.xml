@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОткрытьЛичныйКабинетТест" id="137">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Личный кабинет Тест</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаОткрытьЛичныйКабинетТестРасширеннаяПодсказка" id="138"/>
+			</Button>
+			<Button name="ФормаОткрытьЛичныйКабинет" id="139">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОткрытьЛичныйКабинет</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Личный Кабинет</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаОткрытьЛичныйКабинетРасширеннаяПодсказка" id="140"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраниц" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницРасширеннаяПодсказка" id="68"/>
+			<ChildItems>
+				<Page name="ГруппаОбщиеПараметры" id="105">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общие</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа общие параметры</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОбщиеПараметрыРасширеннаяПодсказка" id="106"/>
+					<ChildItems>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="ОсновнаяОрганизация" id="28">
+							<DataPath>Объект.Организация</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОсновнаяОрганизацияКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="ОсновнаяОрганизацияРасширеннаяПодсказка" id="30"/>
+							<Events>
+								<Event name="OnChange">ОсновнаяОрганизацияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Пользователь" id="7">
+							<DataPath>Объект.Пользователь</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПользовательКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="ПаузаСек" id="107">
+							<DataPath>Объект.ПаузаСек</DataPath>
+							<ToolTipRepresentation>ShowRight</ToolTipRepresentation>
+							<ContextMenu name="ПаузаСекКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="ПаузаСекРасширеннаяПодсказка" id="109"/>
+						</InputField>
+						<CheckBoxField name="ИспользоватьПоУмолчанию" id="46">
+							<DataPath>Объект.ИспользоватьПоУмолчанию</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьПоУмолчаниюКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ИспользоватьПоУмолчаниюРасширеннаяПодсказка" id="48"/>
+						</CheckBoxField>
+						<CheckBoxField name="ТестовыйКонтур" id="58">
+							<DataPath>Объект.ТестовыйКонтур</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ТестовыйКонтурКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ТестовыйКонтурРасширеннаяПодсказка" id="60"/>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаРеквизитыОборудования" id="130">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оборудование</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа реквизиты оборудования</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаРеквизитыОборудованияРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьПодключаемоеОборудование" id="122">
+									<DataPath>Объект.ИспользоватьПодключаемоеОборудование</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьПодключаемоеОборудованиеКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ИспользоватьПодключаемоеОборудованиеРасширеннаяПодсказка" id="124"/>
+									<Events>
+										<Event name="OnChange">ИспользоватьПодключаемоеОборудованиеПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<Button name="ПодключаемоеОборудование" id="125">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ПодключаемоеОборудование</CommandName>
+									<ExtendedTooltip name="ПодключаемоеОборудованиеРасширеннаяПодсказка" id="126"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ЗаписыватьДокументПриСканировании" id="127">
+							<DataPath>Объект.ЗаписыватьДокументПриСканировании</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ЗаписыватьДокументПриСканированииКонтекстноеМеню" id="128"/>
+							<ExtendedTooltip name="ЗаписыватьДокументПриСканированииРасширеннаяПодсказка" id="129"/>
+						</CheckBoxField>
+						<UsualGroup name="грОтладка" id="141">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отладка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр отладка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="грОтладкаРасширеннаяПодсказка" id="142"/>
+							<ChildItems>
+								<CheckBoxField name="ВыводитьСообщенияДляОтладки" id="22">
+									<DataPath>Объект.ВыводитьСообщенияДляОтладки</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВыводитьСообщенияДляОтладкиКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ВыводитьСообщенияДляОтладкиРасширеннаяПодсказка" id="24"/>
+								</CheckBoxField>
+								<CheckBoxField name="СохранятьЗапросы" id="25">
+									<DataPath>Объект.СохранятьЗапросы</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СохранятьЗапросыКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="СохранятьЗапросыРасширеннаяПодсказка" id="27"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаОборудование" id="143">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Оборудование</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа оборудование</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаОборудованиеРасширеннаяПодсказка" id="144"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаЧестныйЗнак" id="69">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Честный знак</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница честный знак</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаЧестныйЗнакРасширеннаяПодсказка" id="70"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="61">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<UsualGroup name="грОтпечаток" id="31">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отпечаток</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр отпечаток</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="грОтпечатокРасширеннаяПодсказка" id="32"/>
+									<ChildItems>
+										<InputField name="Отпечаток" id="10">
+											<DataPath>Объект.Отпечаток</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ОтпечатокКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ОтпечатокРасширеннаяПодсказка" id="12"/>
+										</InputField>
+										<Button name="ВыбратьСертификат" id="33">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ВыбратьСертификат</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Выбрать</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ВыбратьСертификатРасширеннаяПодсказка" id="34"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="грТокен" id="37">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр токен</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Гр токен</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="грТокенРасширеннаяПодсказка" id="38"/>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="грСУЗ" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Станция Управления Заказами [СУЗ]</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гр СУЗ</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ThroughAlign>DontUse</ThroughAlign>
+							<ExtendedTooltip name="грСУЗРасширеннаяПодсказка" id="42"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКомандыСУЗ" id="56">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа команды СУЗ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа команды СУЗ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ThroughAlign>Use</ThroughAlign>
+									<ExtendedTooltip name="ГруппаКомандыСУЗРасширеннаяПодсказка" id="57"/>
+									<ChildItems>
+										<InputField name="OmsId" id="19">
+											<DataPath>Объект.OmsId</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="OmsIdКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="OmsIdРасширеннаяПодсказка" id="21"/>
+										</InputField>
+										<Button name="ПроверитьДоступностьСУЗ" id="54">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ПроверитьДоступностьСУЗ</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проверить</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПроверитьДоступностьСУЗРасширеннаяПодсказка" id="55"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ИдентификаторСоединения" id="51">
+									<DataPath>Объект.ИдентификаторСоединения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Идентификатор соединения omsConnection</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ИдентификаторСоединенияКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ИдентификаторСоединенияРасширеннаяПодсказка" id="53"/>
+								</InputField>
+								<UsualGroup name="Группа2" id="63">
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="64"/>
+									<ChildItems>
+										<InputField name="clientToken" id="16">
+											<DataPath>Объект.clientToken</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="clientTokenКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="clientTokenРасширеннаяПодсказка" id="18"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ПрефиксКомпанииGS1" id="43">
+							<ContextMenu name="ПрефиксКомпанииGS1КонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="ПрефиксКомпанииGS1РасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<UsualGroup name="ГруппаСрокДействияТокена" id="135">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа срок действия токена</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа срок действия токена</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="ГруппаСрокДействияТокенаРасширеннаяПодсказка" id="136"/>
+							<ChildItems>
+								<InputField name="СрокДействияТокена" id="132">
+									<DataPath>Объект.СрокДействияТокена</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="СрокДействияТокенаКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="СрокДействияТокенаРасширеннаяПодсказка" id="134"/>
+								</InputField>
+								<Button name="ОбновитьТокенДоступа" id="65">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОбновитьТокенДоступа</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Обновить</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОбновитьТокенДоступаРасширеннаяПодсказка" id="66"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСервисПровайдер" id="113">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сервис провайдер</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа сервис провайдер</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаСервисПровайдерРасширеннаяПодсказка" id="114"/>
+							<ChildItems>
+								<InputField name="СервисПровайдер" id="110">
+									<DataPath>Объект.СервисПровайдер</DataPath>
+									<ContextMenu name="СервисПровайдерКонтекстноеМеню" id="111"/>
+									<ExtendedTooltip name="СервисПровайдерРасширеннаяПодсказка" id="112"/>
+								</InputField>
+								<Button name="ЗагрузитьСервисПровайдеров" id="115">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗагрузитьСервисПровайдеров</CommandName>
+									<ExtendedTooltip name="ЗагрузитьСервисПровайдеровРасширеннаяПодсказка" id="116"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="Субаккаунт" id="117">
+							<DataPath>Объект.Субаккаунт</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СубаккаунтКонтекстноеМеню" id="118"/>
+							<ExtendedTooltip name="СубаккаунтРасширеннаяПодсказка" id="119"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСтраницаВетис" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ветис API</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа страница ветис</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСтраницаВетисРасширеннаяПодсказка" id="72"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПараметрыХозсубъекта" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры подключения к Ветис API</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа параметры хозсубъекта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаПараметрыХозсубъектаРасширеннаяПодсказка" id="86"/>
+							<ChildItems>
+								<InputField name="param_username" id="73">
+									<DataPath>Объект.param_username</DataPath>
+									<ContextMenu name="param_usernameКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="param_usernameРасширеннаяПодсказка" id="75"/>
+								</InputField>
+								<InputField name="param_password" id="76">
+									<DataPath>Объект.param_password</DataPath>
+									<ContextMenu name="param_passwordКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="param_passwordРасширеннаяПодсказка" id="78"/>
+								</InputField>
+								<InputField name="param_issuer_id" id="79">
+									<DataPath>Объект.param_issuer_id</DataPath>
+									<ContextMenu name="param_issuer_idКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="param_issuer_idРасширеннаяПодсказка" id="81"/>
+								</InputField>
+								<InputField name="param_api_key" id="82">
+									<DataPath>Объект.param_api_key</DataPath>
+									<ContextMenu name="param_api_keyКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="param_api_keyРасширеннаяПодсказка" id="84"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаМеркурий" id="87">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Реквизиты Меркурий</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа меркурий</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаМеркурийРасширеннаяПодсказка" id="88"/>
+							<ChildItems>
+								<InputField name="param_intiator_login" id="89">
+									<DataPath>Объект.param_intiator_login</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Логин инициатора</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Логин входа на сайт Меркурий</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ContextMenu name="param_intiator_loginКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="param_intiator_loginРасширеннаяПодсказка" id="91"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПлощадка" id="145">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Площадка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа площадка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаПлощадкаРасширеннаяПодсказка" id="146"/>
+							<ChildItems>
+								<InputField name="ВСД_Площадка" id="95">
+									<DataPath>Объект.ВСД_Площадка</DataPath>
+									<ContextMenu name="ВСД_ПлощадкаКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ВСД_ПлощадкаРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<Button name="кнВыполнитьИнициализацию" id="101">
+									<Type>UsualButton</Type>
+									<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+									<CommandName>Form.Command.кнВыполнитьИнициализацию</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузить площадки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="кнВыполнитьИнициализациюРасширеннаяПодсказка" id="102"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="КодЛицензии" id="92">
+							<DataPath>Объект.КодЛицензии</DataPath>
+							<ContextMenu name="КодЛицензииКонтекстноеМеню" id="93"/>
+							<ExtendedTooltip name="КодЛицензииРасширеннаяПодсказка" id="94"/>
+						</InputField>
+						<Button name="ФормаОбщаяКомандаЗагрузитьСкладскойЖурналВетис" id="103">
+							<Type>UsualButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="ФормаОбщаяКомандаЗагрузитьСкладскойЖурналВетисРасширеннаяПодсказка" id="104"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.кб99_Параметры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыбратьСертификат" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать сертификат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать сертификат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыбратьСертификат</Action>
+		</Command>
+		<Command name="ПроверитьДоступностьСУЗ" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить доступность СУЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить доступность СУЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьДоступностьСУЗ</Action>
+		</Command>
+		<Command name="ОбновитьТокенДоступа" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить токен доступа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить токен доступа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьТокенДоступа</Action>
+		</Command>
+		<Command name="кнВыполнитьИнициализацию" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить инициализацию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кн выполнить инициализацию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>кнВыполнитьИнициализацию</Action>
+		</Command>
+		<Command name="ЗагрузитьСервисПровайдеров" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сервис провайдеров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСервисПровайдеров</Action>
+		</Command>
+		<Command name="ПодключаемоеОборудование" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключаемое оборудование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключаемое оборудование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодключаемоеОборудование</Action>
+		</Command>
+		<Command name="ОткрытьЛичныйКабинет" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть личный кабинет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть личный кабинет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЧесныйЗнак</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьЛичныйКабинет</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
