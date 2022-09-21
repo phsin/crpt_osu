@@ -29,6 +29,24 @@
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<ExtendedConfigurationObject>c9cda7a7-da6f-4830-800a-70e77e3f6e9d</ExtendedConfigurationObject>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Attribute uuid="e5e4ef3b-7ad6-4635-a53a-5ac2c6c1d75c">
+				<InternalInfo/>
+				<Properties>
+					<Name>Вес</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>ba8289fe-be8a-45a4-819c-2c2f84c4de2f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

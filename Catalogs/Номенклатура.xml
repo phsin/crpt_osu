@@ -46,6 +46,35 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="879dedbb-1132-4b6b-a993-c292ddad5174">
+				<InternalInfo/>
+				<Properties>
+					<Name>ЕдиницаИзмерения</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>3d295926-ac21-4f62-b76e-64c929f1fc0e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.УпаковкиЕдиницыИзмерения</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f9c87c26-eb90-4d4a-9d80-f4beb2230db1">
+				<InternalInfo/>
+				<Properties>
+					<Name>ВесЧислитель</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>2ab0f88e-9b40-424b-9bbb-54bb1b9c9da1</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

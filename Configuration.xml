@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.кб99_исмпОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>https://kb99.pro</Vendor>
-			<Version>0.8</Version>
+			<Version>0.9</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -101,7 +101,7 @@
 			<CommonForm>ДлительнаяОперация1</CommonForm>
 			<CommonForm>ОформитьПодписку</CommonForm>
 			<CommonForm>ФормаВыводаСообщенийПользователю</CommonForm>
-			<CommonForm>кб99_РегламентныеЗадания</CommonForm>
+			<CommonForm>кб99_РегламентныеЗаданияИСМП</CommonForm>
 			<CommonForm>кб99_РегламентноеЗадание_ПолучитьОтветИСМП</CommonForm>
 			<Catalog>Организации</Catalog>
 			<Catalog>Контрагенты</Catalog>
